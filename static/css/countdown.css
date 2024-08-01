@@ -1,0 +1,74 @@
+@property --t {
+    syntax: "<number>";
+    initial-value: 20;
+    inherits: true;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#countdown {
+    display: grid;
+    margin: 0 1rem;
+    width: 16rem;
+    animation: t 20s linear;
+}
+
+@keyframes t {
+    to {
+        --t: 0;
+    }
+}
+
+svg {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+[r] {
+    fill: none;
+    stroke: rgb(192, 192, 192);
+}
+
+[r]+[r] {
+    transform: rotate(-90deg);
+    stroke-linecap: round;
+    stroke: color-mix(in hsl shorter hue, rgb(88, 88, 255) calc((var(--t)/20)*100%), rgb(255, 0, 0));
+    stroke-dasharray: calc(var(--t)/20) 1;
+}
+
+#countdown_timer {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+    font-size: 2.8rem;
+    color: color-mix(in hsl shorter hue, rgb(88, 88, 255) calc((var(--t)/20)*100%), rgb(255, 0, 0));
+    ;
+}
+
+@media screen and (max-height: 462px) {
+    #countdown {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-height: 380px) {
+    #countdown {
+        width: 8rem;
+    }
+}
