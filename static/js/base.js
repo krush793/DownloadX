@@ -1,7 +1,3 @@
-if (window.downData) {
-    document.querySelector("#share_btn").style.display = "none";
-}
-
 const stickynavbar = () => {
     if (window.scrollY === 0) {
         navbar.style.backgroundColor = "";
