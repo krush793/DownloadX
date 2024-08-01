@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/countdown.css">
+{% endblock %}
+
+{% block main %}
+<main>
+    <section>
+        <div id="countdown">
+            <svg viewBox="-50 -50 100 100" stroke-width="10">
+                <circle r="45"></circle>
+                <circle r="45" pathLength="1"></circle>
+            </svg>
+            <span id="countdown_timer">20</span>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
+{% block end %}
+<script src="/static/js/countdown.js"></script>
+{% endblock %}

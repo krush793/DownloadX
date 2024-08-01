@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block head %}
+<meta name="description"
+    content="DownloadX is an all in one video and audio downloader that provides an easy way to download your favorite videos and audios from any website.">
+<meta name="keywords"
+    content="DownloadX, Video downloader, Audio downloader, All in one video and audio downloader, HD video downloader, Youtube downloader, Facebook downloader, Instagram downloader, Twitter downloader, SoundCloud downloader, All in one video downloader, All in one audio downloader">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DownloadX">
+<meta property="og:description" content="All In One Video & Audio Downloader">
+<meta property="og:image" content="https://www.downloadx.in/static/src/logo/logo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DownloadX">
+<meta name="twitter:description" content="All In One Video & Audio Downloader">
+<meta name="twitter:image" content="https://www.downloadx.in/static/src/logo/logo.webp">
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "DownloadX",
+        "url": "https://www.downloadx.in",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.downloadx.in/{url}",
+            "query-input": "required name=url"
+        }
+    }
+</script>
+<link rel="canonical" href="https://www.downloadx.in">
+<link rel="preload" href="/static/css/fonts/400.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/static/css/fonts/700.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+
+{% block main %}
+<main>
+    <section id="head_section">
+        <h1 id="title">DownloadX</h1>
+        <h2 id="description">All in one video and audio downloader</h2>
+        <form id="download_form" method="post">
+            <input id="download_url" name="url" type="text" placeholder="Enter video/audio URL here" required>
+            <button id="download_btn" type="submit">Download</button>
+        </form>
+    </section>
+    <section>
+        <div class="sub_title">A simple guide to download videos and audios easily</div>
+        <div id="gudie_container">
+            <div class="guide_boxes">
+                <div class="guide_boxes_head">
+                    <span class="guide_boxes_head_content">1</span>
+                </div>
+                <div class="guide_boxes_body">
+                    <b>Method-1 : </b>Copy the URL of the video/audio you want to download. Paste this URL into the
+                    input field above. Click the "Download" button to proceed.
+                </div>
+            </div>
+            <div class="guide_boxes">
+                <div class="guide_boxes_head">
+                    <span class="guide_boxes_head_content">2</span>
+                </div>
+                <div class="guide_boxes_body">
+                    <b>Method-2 : </b>Add "downloadx.in/" just before the URL of the video/audio you want to download
+                    and press Enter to proceed. Here's an example : <i><b>"downloadx.in/</b>https:<span
+                            id="next_line"></span>//video-audio.url"</i>
+                </div>
+            </div>
+            <div class="guide_boxes">
+                <div class="guide_boxes_head">
+                    <span class="guide_boxes_head_content">3</span>
+                </div>
+                <div class="guide_boxes_body">
+                    Wait for at least 10 seconds after Method-1 or Method-2, then select the box according to the format
+                    and quality you want to download.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sub_title">DownloadX's features</div>
+        <div id="feature_container">
+            {% for feature in features %}
+            <div class="feature_boxes"><img class="feature_img" src="{{feature.src}}" alt="">{{feature.title}}</div>
+            {% endfor %}
+        </div>
+    </section>
+    <section>
+        <div class="sub_title">Supported websites for downloading videos and audios</div>
+        <div class="sites_container">
+            {% for site in sites1 %}
+            <div class="site_boxes"><img class="site_img" src="{{site.src}}" alt="">{{site.name}}</div>
+            {% endfor %}
+        </div>
+        <details>
+            <summary id="sites_btn">
+                <span>View more supported websites</span>
+                <span class="details_overlay"></span>
+            </summary>
+            <div class="details_modal">
+                <div class="details_modal_header">
+                    <div class="details_modal_title">Supported websites</div>
+                    <button class="details_modal_close toggle" type="button" title="details modal close">
+                        <span class="icon_bar"></span>
+                        <span class="icon_bar"></span>
+                    </button>
+                </div>
+                <div class="details_modal_content">
+                    <div class="sites_container">
+                        {% for site in sites2 %}
+                        <div class="site_boxes"><img class="site_img" src="{{site.src}}" alt=""
+                                loading="lazy">{{site.name}}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </details>
+    </section>
+    <section>
+        <div class="sub_title">Contact Us</div>
+        <form id="contact_form" method="post">
+            <input name="name" type="text" class="contact_form_input" placeholder="Enter full name" autocomplete="name"
+                required>
+            <input name="email_id" type="email" class="contact_form_input" placeholder="Enter email address" required>
+            <input name="subject" type="text" class="contact_form_input" placeholder="Enter subject" required>
+            <textarea name="message" class="contact_form_input" placeholder="Enter message" required></textarea>
+            <button id="contact_form_btn" type="submit">Send</button>
+        </form>
+    </section>
+</main>
+{% endblock %}
+
+{% block end %}
+<script src="/static/js/index.js"></script>
+{% endblock %}
