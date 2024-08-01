@@ -1,0 +1,120 @@
+{
+    "FEATURES": [
+        {
+            "src": "/static/src/features/no_watermark.svg",
+            "title": "No watermark"
+        },
+        {
+            "src": "/static/src/features/download.svg",
+            "title": "Unlimited downloads"
+        },
+        {
+            "src": "/static/src/features/security.svg",
+            "title": "Safe & Secure"
+        }
+    ],
+    "SITES1": [
+        {
+            "src": "static/src/sites/youtube.svg",
+            "name": "YouTube"
+        },
+        {
+            "src": "static/src/sites/facebook.svg",
+            "name": "Facebook"
+        },
+        {
+            "src": "static/src/sites/instagram.svg",
+            "name": "Instagram"
+        },
+        {
+            "src": "static/src/sites/twitter.svg",
+            "name": "Twitter"
+        },
+        {
+            "src": "static/src/sites/dailymotion.svg",
+            "name": "Dailymotion"
+        },
+        {
+            "src": "static/src/sites/sharechat.svg",
+            "name": "Share Chat"
+        },
+        {
+            "src": "static/src/sites/likee.svg",
+            "name": "Likee"
+        },
+        {
+            "src": "static/src/sites/rumble.svg",
+            "name": "Rumble"
+        },
+        {
+            "src": "static/src/sites/mxtakatak.svg",
+            "name": "MxTakatak"
+        },
+        {
+            "src": "static/src/sites/twitch.svg",
+            "name": "Twitch"
+        }
+    ],
+    "SITES2": [
+        {
+            "src": "static/src/sites/9gag.svg",
+            "name": "9GAG"
+        },
+        {
+            "src": "static/src/sites/bilibili.svg",
+            "name": "Bilibili"
+        },
+        {
+            "src": "static/src/sites/bitchute.svg",
+            "name": "Bitchute"
+        },
+        {
+            "src": "static/src/sites/espn.svg",
+            "name": "ESPN"
+        },
+        {
+            "src": "static/src/sites/febspot.svg",
+            "name": "Febspot"
+        },
+        {
+            "src": "static/src/sites/flickr.svg",
+            "name": "Flickr"
+        },
+        {
+            "src": "static/src/sites/ifunny.svg",
+            "name": "Ifunny"
+        },
+        {
+            "src": "static/src/sites/imdb.svg",
+            "name": "IMDB"
+        },
+        {
+            "src": "static/src/sites/izlesene.svg",
+            "name": "Izlesene"
+        },
+        {
+            "src": "static/src/sites/kickstarter.svg",
+            "name": "Kickstarter"
+        },
+        {
+            "src": "static/src/sites/linkedin.svg",
+            "name": "LinkedIn"
+        },
+        {
+            "src": "static/src/sites/mashable.svg",
+            "name": "Mashable"
+        },
+        {
+            "src": "static/src/sites/pinterest.svg",
+            "name": "Pinterest"
+        },
+        {
+            "src": "static/src/sites/puhutv.svg",
+            "name": "PuhuTV"
+        },
+        {
+            "src": "static/src/sites/tumblr.svg",
+            "name": "Tumblr"
+        }
+    ]
+}
