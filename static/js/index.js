@@ -19,8 +19,8 @@ inputURL.addEventListener('click', async () => {
 });
 downloadBtn.addEventListener('click', () => {
     var dataToSend = {
-  "key1": "value1",
-  "key2": "value2",
-};
-downData.postMessage(JSON.stringify(dataToSend));
+      "key1": "value1",
+      "key2": "value2",
+    };
+    downData.postMessage(JSON.stringify(dataToSend));
 });
